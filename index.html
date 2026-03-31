@@ -1,37 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <title>Cyber-Tech Portal</title>
+    <style>
+        body { background-color: #0a0b10; color: #00ffff; font-family: 'Courier New', monospace; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .main-frame { border: 2px solid #00ffff; padding: 40px; border-radius: 5px; box-shadow: 0 0 20px #00ffff; max-width: 900px; background: rgba(0, 255, 255, 0.05); }
+        h1 { text-align: center; text-transform: uppercase; letter-spacing: 5px; border-bottom: 1px solid #00ffff; padding-bottom: 10px; }
+        nav { text-align: center; margin: 25px 0; }
+        nav a { color: #fff; text-decoration: none; margin: 0 10px; padding: 5px 10px; border: 1px solid transparent; transition: 0.3s; }
+        nav a:hover { border: 1px solid #00ffff; box-shadow: 0 0 10px #00ffff; color: #00ffff; }
+        marquee { color: #ff00ff; font-weight: bold; margin: 20px 0; border-y: 1px solid #ff00ff; }
+        .format-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .code-box { background: #000; border-left: 4px solid #ff00ff; padding: 15px; color: #fff; }
+    </style>
 </head>
 <body>
+    <div class="main-frame">
+        <header>
+            <h1><b><i><u>System Mainframe</u></i></b></h1>
+        </header>
 
-<h1><b>Welcome to My Website</b></h1>
-<h2><i><u>This is the Home Page</u></i></h2>
+        <marquee scrollamount="12">>> SYSTEM ONLINE // WELCOME USER // ACCESSING DATABASE // NAVIGATE VIA THE TERMINAL LINKS BELOW <<</marquee>
 
-<marquee>✨ Welcome to my HTML project website! ✨</marquee>
+        <nav>
+            <a href="multimedia.html">Visuals</a>
+            <a href="lists.html">Data_Streams</a>
+            <a href="tables.html">Grid_Log</a>
+            <a href="frames.html">Multi_View</a>
+            <a href="form.html">User_Entry</a>
+            <a href="mcq.html">Knowledge_Test</a>
+        </nav>
 
-<p>
-<b>Bold</b><br>
-<i>Italic</i><br>
-<u>Underline</u><br>
-<strong>Strong Text</strong><br>
-<small>Small Text</small><br>
-<big>Big Text</big><br>
-<tt>Teletype Text</tt><br>
-<strike>Strikethrough</strike><br>
-H<sub>2</sub>O (Subscript)<br>
-X<sup>2</sup> (Superscript)<br>
-<font color="blue">Colored Text</font>
-</p>
-
-<p>Special Characters: &copy; &reg; &#169;</p>
-
-<a href="multimedia.html">Go to Multimedia Page</a><br>
-<a href="lists.html">Go to Lists Page</a><br>
-<a href="tables.html">Go to Tables Page</a><br>
-<a href="frames.html">Go to Frames Page</a><br>
-<a href="form.html">Go to Forms Page</a><br>
-<a href="mcq.html">Go to MCQ Page</a>
-
+        <div class="format-grid">
+            <div class="code-box">
+                <h3>Core Formatting</h3>
+                <p>1. <tt>Terminal Monospace</tt></p>
+                <p>2. <strike>Deprecated Protocol</strike></p>
+                <p>3. Isotope: H<sub>2</sub> (Sub)</p>
+                <p>4. Power: 10<sup>9</sup> (Sup)</p>
+            </div>
+            <div class="code-box" style="border-left-color: #00ffff;">
+                <h3>Advanced Tags</h3>
+                <p>5. <big>Priority Alert</big></p>
+                <p>6. <small>System Log Detail</small></p>
+                <p>7. <strong>CRITICAL DATA</strong></p>
+                <p>8. <font face="Impact" color="#ff00ff">Legacy Font Support</font></p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 30px; color: #666;">
+            &copy; 2026 CYBER-CORP | &reg; REGISTERED | &#169; ENCRYPTED | &trade;
+        </p>
+    </div>
 </body>
 </html>
