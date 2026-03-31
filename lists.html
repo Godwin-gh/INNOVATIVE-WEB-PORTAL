@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lists Page</title>
+    <title>Data Streams</title>
+    <style>
+        body { background: #000; color: #0ff; font-family: monospace; padding: 50px; }
+        .list-container { border: 1px dashed #0ff; padding: 30px; max-width: 600px; margin: auto; }
+        li { margin-bottom: 10px; }
+        dt { color: #f0f; font-weight: bold; }
+    </style>
 </head>
 <body>
-
-<h1>Lists Example</h1>
-
-<h3>Unordered List</h3>
-<ul>
-    <li>Apple</li>
-    <li>Banana</li>
-    <li>Cherry</li>
-</ul>
-
-<h3>Ordered List</h3>
-<ol>
-    <li>Step 1</li>
-    <li>Step 2</li>
-    <li>Step 3</li>
-</ol>
-
-<h3>Definition List</h3>
-<dl>
-    <dt>HTML</dt>
-    <dd>Hypertext Markup Language</dd>
-
-    <dt>CSS</dt>
-    <dd>Style sheet language</dd>
-</dl>
-
-<br>
-<a href="index.html">Back to Home</a>
-
+    <div class="list-container">
+        <h2>OBJECT_LIST_ARRAY</h2>
+        <ul><li>Protocol Alpha</li><li>Protocol Beta</li><li>Protocol Gamma</li></ul>
+        <hr>
+        <h2>SEQUENCE_ORDER</h2>
+        <ol><li>Initialize</li><li>Analyze</li><li>Execute</li></ol>
+        <hr>
+        <h2>TERMINOLOGY</h2>
+        <dl>
+            <dt>NULL</dt><dd>Absence of data value.</dd>
+            <dt>ARRAY</dt><dd>Collection of data elements.</dd>
+        </dl>
+        <br><a href="index.html" style="color:#fff;">[ RETURN_HOME ]</a>
+    </div>
 </body>
 </html>
