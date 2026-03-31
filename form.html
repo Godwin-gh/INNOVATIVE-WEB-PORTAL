@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Forms Page</title>
+    <title>Access Request</title>
+    <style>
+        body { background: #0a0a0a; color: #fff; font-family: monospace; display: flex; justify-content: center; padding: 50px; }
+        .terminal-form { border: 2px solid #f0f; padding: 40px; box-shadow: 0 0 15px #f0f; width: 450px; }
+        input, select, textarea { background: #000; border: 1px solid #f0f; color: #fff; width: 100%; padding: 10px; margin: 10px 0; }
+        input[type="submit"] { background: #f0f; color: #000; font-weight: bold; cursor: pointer; }
+    </style>
 </head>
 <body>
-
-<h1>Registration Form</h1>
-
-<form>
-    Name: <input type="text"><br><br>
-    Password: <input type="password"><br><br>
-
-    Gender:
-    <input type="radio" name="gender"> Male
-    <input type="radio" name="gender"> Female<br><br>
-
-    Hobbies:
-    <input type="checkbox"> Reading
-    <input type="checkbox"> Sports<br><br>
-
-    Upload File:
-    <input type="file"><br><br>
-
-    Country:
-    <select>
-        <option>USA</option>
-        <option>India</option>
-        <option>UK</option>
-    </select><br><br>
-
-    Comments:<br>
-    <textarea rows="4" cols="30"></textarea><br><br>
-
-    <input type="submit">
-    <input type="reset">
-</form>
-
-<br>
-<a href="index.html">Back to Home</a>
-
+    <div class="terminal-form">
+        <h2 style="color:#f0f">IDENT_CHECK</h2>
+        <form>
+            ID_NAME: <input type="text" placeholder="Enter Nickname">
+            ACCESS_KEY: <input type="password" placeholder="••••••••">
+            GENDER_CODE: <input type="radio" name="r" style="width:auto"> M <input type="radio" name="r" style="width:auto"> F
+            <br>PERMISSION: <input type="checkbox" style="width:auto"> ROOT_ACCESS
+            <select><option>ZONE_SELECT</option><option>EU_NORTH</option><option>AS_EAST</option></select>
+            UPLINK_FILE: <input type="file">
+            BIO_DATA: <textarea></textarea>
+            <input type="submit" value="EXECUTE_ENTRY">
+            <input type="reset" value="PURGE_FORM" style="background:#444;">
+        </form>
+        <p align="center"><a href="index.html" style="color:#f0f">REBOOT</a></p>
+    </div>
 </body>
 </html>
