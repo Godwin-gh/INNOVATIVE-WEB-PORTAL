@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Multimedia Page</title>
+    <title>Visual Terminal</title>
+    <style>
+        body { background: #050505; color: #0f0; font-family: monospace; text-align: center; padding: 50px; }
+        .scanner { position: relative; display: inline-block; padding: 10px; border: 1px solid #0f0; }
+        img { filter: grayscale(50%) sepia(20%) brightness(80%); border: 1px solid #0f0; }
+        .back { color: #0f0; text-decoration: none; display: block; margin-top: 20px; font-size: 1.2rem; }
+    </style>
 </head>
 <body>
-
-<h1>Multimedia Page</h1>
-
-<img src="image.jpg" alt="Sample Image" width="300" height="200">
-
-<br><br>
-<a href="index.html">Back to Home</a>
-
+    <h2>INTERNAL_IMAGE_STORAGE</h2>
+    <div class="scanner">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&h=300" 
+             alt="Circuit Board" width="500" height="300">
+    </div>
+    <a href="index.html" class="back">_REBOOT_TO_HOME</a>
 </body>
 </html>
